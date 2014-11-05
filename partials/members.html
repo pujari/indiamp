@@ -1,0 +1,37 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<span class="label label-default">Dimension 1</span><br/>
+			<span class="btn-group" id="dimension1Selected" data-toggle="buttons-radio">
+				 <button type="button" class="btn btn-sm btn-primary navbar-btn" ng-repeat="dimension in dimensions" ng-click='setDimension1(dimension)'>{{dimension}}</button>
+			</span>
+		</div>
+		<div class="col-md-4">
+			<span class="label label-default">Measure</span><br/>
+			<span class="btn-group" id="measureSelected" data-toggle="buttons-radio">
+				 <button type="button" class="btn btn-sm btn-default navbar-btn" ng-repeat="measure in measures" ng-click='setMeasure(measure)'>{{measure}}</button>
+			</span>
+		</div>
+
+		<div class="col-md-4">
+			<span class="label label-default">Dimension 2</span><br/>
+			<span class="btn-group" id="dimension2Selected" data-toggle="buttons-radio">
+				 <button type="button" class="btn btn-sm btn-primary navbar-btn" ng-repeat="dimension in dimensions" ng-click='setDimension2(dimension)'>{{dimension}}</button>
+			</span>
+		</div>
+	</div>
+	<div class="alert alert-success">
+		<strong>{{sabha}}</strong> Total records : <strong>{{dataCount}}</strong>, {{dimension1}} Categories: <strong>{{dimension1Count}}</strong>, {{dimension2}} Categories: <strong>{{dimension2Count}}</strong>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="chart-title">{{measure}} by {{dimension1}}</div>
+			<div id="chart-ring-dimension1"></div>
+			<div id="chart-hist-measure"></div>
+		</div>
+		<div class="col-md-6">
+			<div class="chart-title">{{measure}} by {{dimension2}} in {{dimension1}}(s) </div>
+			<div id="chart-row-dimension2"></div>
+		</div>
+	</div>
+</div>

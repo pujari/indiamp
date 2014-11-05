@@ -1,0 +1,19 @@
+{
+  "name": "IndiaMP",
+  "description": "A sample project to analyze India's member of parliament data",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pujari/indiamp",
+  "license": "India",
+  "private": true,
+  "dependencies": {
+    "d3": null,
+    "jquery": null,
+    "bootstrap": null,
+    "dcjs": null,
+    "angular": null,
+    "angular-route": null,
+    "angular-loader": null,
+    "angular-mocks": null,
+    "html5-boilerplate": null
+  }
+}
