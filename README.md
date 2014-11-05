@@ -6,4 +6,7 @@ This project is a demonstration of the use of DC.JS and AngularJS. It displays i
 
 To get you started you can simply clone this repository and install the dependencies:
 
-## Contact
+## Acknowledgements
+
+Data - http://www.prsindia.org/mptrack/16loksabha/
+DC.js - http://dc-js.github.io/dc.js/
